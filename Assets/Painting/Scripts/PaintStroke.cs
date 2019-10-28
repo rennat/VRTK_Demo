@@ -8,7 +8,7 @@ namespace Tannern.Painting
         void FixedUpdate()
         {
             LineRenderer line = GetComponent<LineRenderer>();
-            Vector3[] points = new Vector3[line.numPositions];
+            Vector3[] points = new Vector3[line.positionCount];
             line.GetPositions(points);
             Vector3 origin, direction;
             RaycastHit hitInfo;
